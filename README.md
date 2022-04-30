@@ -2,11 +2,12 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![](Images/diagram_filename.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+ ![](Playbook_files/filebeat-playbook.yml)
+ ![](Playbook_files/metricbeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -68,7 +69,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Images/docker_ps_output.png)
+![](Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines: Web-1 and Web-2 at the IP addresses 10.0.0.6 and 10.0.0.7
@@ -87,7 +88,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the playbook file to Ansible control node.
 - Update the hosts file to include Groups and IPs
-- Run the playbook, and navigate to Kibana (http://20.211.105.234:5601/) to check that the installation worked as expected.
+- Run the playbook, and navigate to Kibana (http://[Your-Elk-IP]]:5601/) to check that the installation worked as expected.
 
 
 
